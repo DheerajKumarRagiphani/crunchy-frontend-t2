@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ShopMart product showcase">
+    <title>ShopMart | Products</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="header">
+        <a class="logo" href="index.html" aria-label="ShopMart home">
+            <img src="./Images/shopping-bag.png" alt="" width="30" height="30">
+            <span>ShopMart</span>
+        </a>
+
+        <nav class="navbar" aria-label="Main navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#" class="active" aria-current="page">Products</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-icons" aria-label="Shopping and account">
+            <span aria-hidden="true">🛒</span>
+            <span aria-hidden="true">👤</span>
+        </div>
+    </header>
+
+    <main>
+        <section class="filter-section" aria-labelledby="filter-label">
+            <label id="filter-label" for="product-status">Filter by Status</label>
+            <select id="product-status" name="product-status">
+                <option value="All">All</option>
+                <option value="New">New</option>
+                <option value="Old">Old</option>
+            </select>
+        </section>
+
+        <section class="products-section" aria-label="Products">
+            <div id="product-container" class="product-grid"></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 ShopMart. All rights reserved.</p>
+    </footer>
+
+    <script src="./script.js" defer></script>
+</body>
+</html>
